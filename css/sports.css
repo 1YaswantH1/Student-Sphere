@@ -1,0 +1,52 @@
+/* header{
+    background-color: cadetblue;
+    margin-top: 0;
+} */
+body{
+    margin: 0;
+    font-family: monospace;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+/* .head_items a:hover{
+    font-size: 1.75rem;
+    position: relative;
+} */
+/* body .live{
+    align-items: center;
+} */
+
+.live{
+    width: 90%;
+    height: 70vh;
+    background-color: rgba(158, 155, 155, 0.119);
+    /* margin-top: 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    /* left: 13%; */
+    border: solid rgb(194, 194, 194) 4px;
+}
+.live:hover{
+    box-shadow:2px 2px 8px black ;
+}
+nav{
+    width: 100%;
+}
+button{
+    font-family: monospace;
+    border:solid 1.5px black;
+    font-size: large;
+    font-weight: 700;
+    border-radius: 7%;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}

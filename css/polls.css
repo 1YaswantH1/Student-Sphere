@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.poll-options {
+    margin-top: 10px;
+}
+
+.poll-option {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.poll-option button {
+    margin-left: 10px;
+    background-color: #f0ad4e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.poll-option button:hover {
+    background-color: #ec971f;
+}
+
+.poll-option .votes {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+button.delete-poll {
+    margin-top: 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.delete-poll:hover {
+    background-color: #c9302c;
+}

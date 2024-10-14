@@ -1,0 +1,54 @@
+body {
+    font-family: monospace;
+    /* margin: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #495057;
+}
+.container {
+    /* margin-top: 7%; */
+    display: flex;
+    flex-direction: column;
+    /* display: block; */
+    border: solid 6px #343a40;
+    box-shadow: 8px 8px 16px;
+    width: 30rem;
+    height: 30rem;
+    align-items: center;
+    justify-content: center;
+    /* margin: auto; */
+    background-color: #adb5bd;
+    color: #343a40;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+.item, .timeslot, #rollno{
+    /* display: block; */
+     margin-bottom: 20px; 
+     /* justify-content: center; */
+}
+button {
+    padding: 10px;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+    border-radius: 6%;
+}
+button:hover{
+    background-color: #212529;
+    color: rgb(36, 134, 36);
+    font-size: 1rem;
+    box-shadow: 2px 2px 4px;
+}
+/* button:disabled {
+    background-color: #ccc;
+} */
+
+select{
+    width: 200px;
+}

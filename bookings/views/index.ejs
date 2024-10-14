@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+    <link rel="stylesheet" href="/CSS/index.css">
+</head>
+<body>
+    <h1>All Booked Slots</h1>
+
+    <div class="container">
+        <% if (bookings.length > 0) { %>
+            <% bookings.forEach(booking => { %>
+                <div class="card">
+                    <h2><%= booking.item.name %></h2>
+                    <p><strong>Time Slot:</strong> <%= booking.timeSlot.toLocaleString() %></p>
+                    <p><strong>Quantity:</strong> <%= booking.quantity %></p>
+                    <form action="/api/bookings/delete/<%= booking._id %>" method="POST">
+                        <button type="submit" class="delete-btn">Delete Booking</button>
+                    </form>
+                </div>
+            <% }); %>
+        <% } else { %>
+            <div><p style="display: block;">No bookings available.</p></div>
+        <% } %>
+        <button><a href="/api/items" class="book-btn">Book New Slot</a></button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Slot</title>
+    <link rel="stylesheet" href="../CSS/booking.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Book a Slot</h1>
+    <form action="/api/bookings" method="POST">
+        <div>
+            <label for="item">Select Item:</label>
+            <select name="itemId" id="item">
+                <% items.forEach(item => { %>
+                    <option value="<%= item._id %>"><%= item.name %></option>
+                <% }); %>
+            </select>
+        </div>
+        <div>
+            <label for="timeSlot">Select Time Slot:</label>
+            <input type="datetime-local" name="timeSlot" id="timeSlot" step="3600" required>
+        </div>
+        <div>
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" min="1" required>
+        </div>
+        <button type="submit" id="bookslot">Book Slot</button>
+        
+    </form>
+    <button><a href="/">Back to Home</a></button>
+    
+</div>
+</body>
+</html>
